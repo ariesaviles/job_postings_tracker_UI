@@ -120,38 +120,6 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Add a fixed or sticky GitHub link
-st.markdown("""
-    <style>
-        .github-link {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #f3f3f3;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            z-index: 999;
-        }
-        .github-link a {
-            text-decoration: none;
-            color: #333;
-            display: flex;
-            align-items: center;
-        }
-        .github-link img {
-            width: 20px;
-            height: 20px;
-            margin-right: 8px;
-        }
-    </style>
-    <div class="github-link">
-        <a href="https://github.com/your-repo-link" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/GitHub_Invertocat_Logo.svg/180px-GitHub_Invertocat_Logo.svg.png" alt="GitHub"> Find on GitHub
-        </a>
-    </div>
-""", unsafe_allow_html=True)
-
 # Add a custom container for charts
 with st.container():
     # Display the charts in Streamlit
