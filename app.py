@@ -56,7 +56,7 @@ selected_sectors = st.multiselect(
 filtered_data = data[data['display_name'].isin(selected_sectors)]
 
 # Create an Altair selection to highlight a line when clicked
-highlight = alt.selection_single(fields=['display_name'], empty='none')
+highlight = alt.selection_single(fields=['display_name'], empty='all')
 
 # Base chart with all lines
 base = alt.Chart(filtered_data).mark_line().encode(
